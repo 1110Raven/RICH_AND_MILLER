@@ -1,9 +1,13 @@
 import Image from "next/image"
+import Link from "next/link"
+
+
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import {
   Wrench, PaintRoller, Trash2, Sparkles,
-  Phone, Mail, MapPin, Instagram
+  Phone, Mail, MapPin, Instagram,
+
 } from "lucide-react"
 
 export default async function Home() {
@@ -50,7 +54,7 @@ export default async function Home() {
               <Wrench className="mb-4" />
               <h3 className="text-xl font-semibold mb-2">Property Maintenance</h3>
               <p className="text-gray-300 mb-4">Reliable upkeep, repairs and seasonal checks.</p>
-              <a href="/services/maintenance" className="text-yellow-400 hover:underline">Learn more →</a>
+              <Link href="/services/maintenance" className="text-yellow-400 hover:underline">Learn more →</Link>
             </div>
 
             {/* Renovation */}
@@ -58,7 +62,7 @@ export default async function Home() {
               <PaintRoller className="mb-4" />
               <h3 className="text-xl font-semibold mb-2">Renovation</h3>
               <p className="text-gray-300 mb-4">Kitchen, bathroom and full-house transformations.</p>
-              <a href="/services/renovation" className="text-yellow-400 hover:underline">Learn more →</a>
+              <Link href="/services/renovation" className="text-yellow-400 hover:underline">Learn more →</Link>
             </div>
 
             {/* Removal */}
@@ -66,7 +70,7 @@ export default async function Home() {
               <Trash2 className="mb-4" />
               <h3 className="text-xl font-semibold mb-2">Removal</h3>
               <p className="text-gray-300 mb-4">Clear-outs and disposals handled safely and efficiently.</p>
-              <a href="/services/removal" className="text-yellow-400 hover:underline">Learn more →</a>
+              <Link href="/services/removal" className="text-yellow-400 hover:underline">Learn more →</Link>
             </div>
 
             {/* Cleaning */}
@@ -74,7 +78,7 @@ export default async function Home() {
               <Sparkles className="mb-4" />
               <h3 className="text-xl font-semibold mb-2">Cleaning</h3>
               <p className="text-gray-300 mb-4">After-builders, deep cleans and scheduled housekeeping.</p>
-              <a href="/services/cleaning" className="text-yellow-400 hover:underline">Learn more →</a>
+              <Link href="/services/cleaning" className="text-yellow-400 hover:underline">Learn more →</Link>
             </div>
           </div>
         </div>
@@ -184,10 +188,10 @@ export default async function Home() {
           <div>
             <h4 className="font-semibold mb-3">Company</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/" className="hover:text-yellow-400">Home</a></li>
-              <li><a href="/#projects" className="hover:text-yellow-400">Projects</a></li>
-              <li><a href="/#about" className="hover:text-yellow-400">About</a></li>
-              <li><a href="/quote" className="hover:text-yellow-400">Get a Quote</a></li>
+              <li><Link href="/" className="hover:text-yellow-400">Home</Link></li>
+              <li><Link href="/#projects" className="hover:text-yellow-400">Projects</Link></li>
+              <li><Link href="/#about" className="hover:text-yellow-400">About</Link></li>
+              <li><Link href="/quote" className="hover:text-yellow-400">Get a Quote</Link></li>
             </ul>
           </div>
 
@@ -203,7 +207,7 @@ export default async function Home() {
           <div>
             <h4 className="font-semibold mb-3">Social</h4>
             <div className="flex items-center gap-4 text-gray-300">
-              <a href="https://www.instagram.com/harryrich07" className="hover:text-yellow-400" aria-label="Instagram"><Instagram /></a>
+              <Link href="https://www.instagram.com/harryrich07" className="hover:text-yellow-400" aria-label="Instagram"><Instagram /></Link>
             </div>
           </div>
         </div>
